@@ -1,7 +1,7 @@
 
 ## README: Predicting Bike Demand Using Multiple Linear Regression
 
-### Objective
+## Objective
 
 The goal of this project is to build a predictive model for shared bike demand (cnt) using multiple linear regression. The model aims to:
 
@@ -9,7 +9,16 @@ The goal of this project is to build a predictive model for shared bike demand (
 - Provide a robust predictive framework to support business decisions.
 - Enhance understanding of demand patterns to inform strategic planning.
 
-### Data Overview
+## Table of Contents
+* [Data Overview]
+* [Preprocessing Steps]
+* [Exploratory Data Analysis (EDA)]
+* [Modeling and Evaluation]
+* [Findings]
+* [Conclusions]
+* [Acknowledgements]
+
+## Data Overview
 
 **Dataset:** Daily bike demand data provided by BoomBikes, spanning two years with 730 rows and 16 columns.
 
@@ -21,7 +30,7 @@ The goal of this project is to build a predictive model for shared bike demand (
   - **Continuous:** temp (normalized temperature), atemp (feels-like temperature), hum (humidity), windspeed (normalized wind speed).
   - **Categorical:** season (Spring, Summer, Fall, Winter), weathersit (weather condition), holiday, workingday, yr (year).
 
-### Preprocessing Steps
+## Preprocessing Steps
 
 - **Data Cleaning:** Dropped irrelevant columns (instant, dteday) and ensured no missing values.
 - **Feature Engineering:**
@@ -30,7 +39,7 @@ The goal of this project is to build a predictive model for shared bike demand (
   - Scaled features to ensure uniformity across variables.
 - **Multicollinearity Check:** Analyzed Variance Inflation Factor (VIF) to reduce redundancy among predictors.
 
-### Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 **Key Insights:**
 
@@ -48,7 +57,7 @@ The goal of this project is to build a predictive model for shared bike demand (
 - **Scatter Plots:** Highlighted key relationships (e.g., temp vs. cnt).
 - **Box Plots:** Showed seasonal and categorical variations in demand.
 
-### Modeling and Evaluation
+## Modeling and Evaluation
 
 #### Modeling Approach
 
@@ -71,7 +80,7 @@ Evaluated models using R² and RMSE on test data.
 | Ridge   | -0.8795     | 2640.85     |
 | Lasso   | 0.8655      | 706.39      |
 
-### Findings
+## Findings
 
 1. **Lasso Regression:**
    - Outperformed Ridge in terms of R² and RMSE, making it the preferred model for this dataset.
@@ -83,7 +92,7 @@ Evaluated models using R² and RMSE on test data.
 3. **Polynomial Features:**
    - Enhanced model accuracy by capturing non-linear trends, especially for temp and windspeed.
 
-### Conclusions and Recommendations
+## Conclusions
 
 1. **Deploy the Lasso Model:**
    - Provides high predictive accuracy (R² = 0.8655) with minimal error (RMSE = 706.39).
@@ -93,3 +102,7 @@ Evaluated models using R² and RMSE on test data.
    - **Seasonal Focus:** Allocate more resources (e.g., bikes, staff) during high-demand seasons like summer and fall.
    - **Weather Sensitivity:** Implement flexible pricing strategies to incentivize usage during less favorable weather conditions.
    - **Targeted Marketing:** Promote services heavily on clear-weather days and weekends to maximize casual ridership.
+
+## Acknowledgements
+- This project was inspired by an upGrad live session on the industry relevance of linear regression models.
+- UpGrad tutorials on Linear Regression available on the learning platform.
