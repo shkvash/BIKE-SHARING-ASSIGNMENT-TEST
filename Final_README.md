@@ -1,5 +1,5 @@
 
-## README: Predicting Bike Demand Using Multiple Linear Regression
+## Predicting Bike Demand Using Multiple Linear Regression
 
 ## Objective
 
